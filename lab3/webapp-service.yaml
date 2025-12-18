@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+#имя, по которому будут находить сервис
+metadata:
+  name: webapp-service
+spec:
+  type: NodePort
+  #селектор, которому принадлежит сервис
+  selector:
+    app: guestbook
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      #порт для доступа извне
+      nodePort: 30080
