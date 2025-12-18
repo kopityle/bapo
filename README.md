@@ -31,5 +31,3 @@ docker compose up --build
 
 ### lab3
 Конфигурационные файлы (`Deployment`, `Service`) для развертывания приложения в Kubernetes.
-
-```
